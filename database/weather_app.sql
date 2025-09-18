@@ -16,33 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `apikeys`
---
-
-DROP TABLE IF EXISTS `apikeys`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `apikeys` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `key_name` varchar(55) NOT NULL,
-  `key_val` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `key_name` (`key_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `apikeys`
---
-
-LOCK TABLES `apikeys` WRITE;
-/*!40000 ALTER TABLE `apikeys` DISABLE KEYS */;
-INSERT INTO `apikeys` VALUES (1,'MAPBOX_TOKEN','pk.eyJ1IjoiY2hyaXN0aWFudmFueWsxNCIsImEiOiJjbWZvMW0waTIwMTk5Mm1zZmc5d3Q3eXhmIn0.B44z4peqk_5YWOjrQiIpJA','2025-09-17 13:57:31'),(2,'OPENWEATHER_KEY','7f568db56589f99b28d704e956fe2416','2025-09-17 13:58:58');
-/*!40000 ALTER TABLE `apikeys` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `saved_weather`
 --
 
@@ -81,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-18 12:40:27
+-- Dump completed on 2025-09-18 12:47:49

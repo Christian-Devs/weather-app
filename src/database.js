@@ -15,11 +15,8 @@ const pool = mysql.createPool({
 
 //get the API keys from the database
 export async function getApiKeys(name) {
-    const [rows] = await pool.query('SELECT key_val FROM apikeys where key_name = ? limit 1', [name]);
-    if (!rows.length) {
-        throw new Error('No API keys found');
-    }
-    return rows[0].key_val;
+    if (key === "MAPBOX_TOKEN") return process.env.MAPBOX_TOKEN;
+    if (key === "OPENWEATHER_KEY") return process.env.OPENWEATHER_KEY;
 }
 
 export default pool;
