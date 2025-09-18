@@ -1,0 +1,14 @@
+body {
+    background: #f7f9fb;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.btn.btn-success:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    background-color: gray;
+    border-color: gray;
+}

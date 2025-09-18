@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log
+.DS_Store
+
+# DB dumps (optional, keep only your .sql export)
+*.ibd
+*.frm
+*.MYD
+*.MYI
+
+# Logs
+logs
+*.log
